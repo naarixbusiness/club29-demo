@@ -28,6 +28,12 @@
 
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; }
+* { scrollbar-width: thin; scrollbar-color: var(--line2) transparent; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: var(--line2); border-radius: 999px; border: 2px solid var(--bg); background-clip: padding-box; }
+*::-webkit-scrollbar-thumb:hover { background: #4A463F; background-clip: padding-box; }
+*::-webkit-scrollbar-corner { background: transparent; }
 body {
   margin: 0;
   background: var(--bg);
